@@ -1,0 +1,20 @@
+{
+  "name": "Better Techmeme",
+  "version": "1.0.4",
+  "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png", 
+        "48": "icon48.png",
+        "128": "icon128.png" },
+  "description": "A simple extension to make Techmeme Better",
+  "content_scripts": [
+    {
+      "matches": ["http://www.techmeme.com/*"],
+      "js": ["jquery.min.js", "myscript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "http://techmeme.com/*"
+  ]
+}
